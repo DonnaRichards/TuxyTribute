@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family: Times, "Times New Roman", "serif";
+}
+.container {
+	background: linear-gradient(90deg, #FFFFFF, #F5E5DE);
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(5, auto); 
+	grid-template-areas: 
+		"header" 
+		"image"
+		"content"
+		"footer"
+		"credit";
+}
+header {
+	grid-area: header;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+h3 {
+	text-align: left;
+}
+
+#img-div {
+	grid-area: image;
+	align-content: center;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	align: center;
+}
+
+#img-caption {
+	text-align: center;
+	font-style: italic;
+}
+
+#content {
+	grid-area: content;
+	align-content: center;
+}
+
+li {
+	line-height: 1.5;
+}
+
+#links {
+	grid-area: footer;
+	align-content: center;
+	border-top: 5px solid lightgray;
+}
+
+#credit {
+	grid-area: credit;
+	text-align: right;
+	font-style: italic;
+}
+
